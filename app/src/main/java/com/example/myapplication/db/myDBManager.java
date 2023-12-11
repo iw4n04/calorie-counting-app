@@ -1,8 +1,4 @@
 package com.example.myapplication.db;
-import static com.example.myapplication.db.dataBaseClass.COLUMN_NAME_CALORIES;
-import static com.example.myapplication.db.dataBaseClass.COLUMN_NAME_PRODUCT;
-import static com.example.myapplication.db.dataBaseClass.COLUMN_NAME_TIME;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -23,22 +19,22 @@ public class myDBManager
     {
         db = myDBHelper.getWritableDatabase();
     }
-    public void insertToDBNameProduct(String productName)
+    public void insertToDBNameProduct(String product)
     {
         ContentValues cv = new ContentValues();
-        cv.put(COLUMN_NAME_PRODUCT, productName);
+        cv.put(dataBaseClass.COLUMN_NAME_PRODUCT, product);
         db.insert(dataBaseClass.TABLE_NAME, null, cv);
     }
     public void insertToDBTime(String time)
     {
         ContentValues cv = new ContentValues();
-        cv.put(COLUMN_NAME_TIME, time);
+        cv.put(dataBaseClass.COLUMN_NAME_TIME, time);
         db.insert(dataBaseClass.TABLE_NAME, null, cv);
     }
     public void insertToDBCallories(int calories)
     {
         ContentValues cv = new ContentValues();
-        cv.put(COLUMN_NAME_CALORIES, calories);
+        cv.put(dataBaseClass.COLUMN_NAME_CALORIES, calories);
         db.insert(dataBaseClass.TABLE_NAME, null, cv);
     }
     public List<String> getFromDB()
@@ -53,8 +49,8 @@ public class myDBManager
                 null);
         while (cursor.moveToNext())
         {
-            String product = cursor.getString
-                    (cursor.getColumnIndexOrThrow(dataBaseClass.COLUMN_NAME_PRODUCT));
+            int titleIndex = cursor.getColumnIndex(dataBaseClass.TABLE_NAME);
+            String product = cursor.getString(titleIndex);
             tempList.add(product);
         }
         cursor.close();
