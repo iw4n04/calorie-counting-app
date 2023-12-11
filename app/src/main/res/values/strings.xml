@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="extraMeal">Введите приём пищи</string>
+    <string name="inputExtraMeal">Добавьте приём пищи</string>
+    <string name="done">Готово</string>
+    <string name="time">Время</string>
+    <string name="Name">Наименование</string>
+    <string name="callories">Каллорийность</string>
+    <string name="spisokProduktov">Список съеденных продуктов</string>
+    <string name="allright">Хорошо</string>
+    <string name="showDB">Показать Список съеденных родуктов</string>
+</resources>
