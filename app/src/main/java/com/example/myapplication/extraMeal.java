@@ -5,9 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.myapplication.db.DBHandler;
-import com.example.myapplication.db.dbMeal;
-
 public class extraMeal extends AppCompatActivity {
     private EditText editTextTime, editTextTextName, editTextNumberCalory;
     @Override
