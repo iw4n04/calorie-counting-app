@@ -1,13 +1,14 @@
 package com.example.myapplication.db;
-import android.database.sqlite.SQLiteDatabase;
 
 public class DataBase {
-    public static final String BD_NAME = "bd_name.db";
-    public static final String TABLE_NAME = "meal_base";
-    public static final int BD_VERSION = 1;
-    public static final String PRODUCT_NAME = "name";
+    public static final String TABLE_NAME = "my_table";
+    public static final String _ID = "_id";
+    public static final String NAME = "name";
     public static final String TIME = "time";
-    public static final String CALLORIES = "calories";
-    public static final String DATE = "date";
+    public static final String COUNTING = "counting";
+    public static final String DB_NAME = "my_db.db";
+    public static final int DB_VERSION = 1;
+    public static final String TABLE_STRUCTURE = "CREATE TABLE IF NOT EXISTS my_table " +
+            "(_id INTEGER PRIMARY KEY,name TEXT,time TEXT,counting INTEGER PRIMARY KEY)";
+    public static final String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
 }
-
