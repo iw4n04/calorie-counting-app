@@ -6,68 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".extraMeal">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/inputExtraMeal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
-
     <Button
-        android:id="@+id/doneButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/doneInputExtraMealButton"
+        android:layout_width="359dp"
+        android:layout_height="47dp"
         android:onClick="goToMainActivity"
         android:text="@string/done"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947" />
+        app:layout_constraintVertical_bias="0.954" />
 
     <LinearLayout
-        android:layout_width="329dp"
-        android:layout_height="524dp"
+        android:layout_width="382dp"
+        android:layout_height="602dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35">
+        app:layout_constraintVertical_bias="0.255">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/produktName" />
 
         <EditText
             android:id="@+id/editTextTime"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/time"
-            android:inputType="text"
-            android:onClick="onClickSaveTime" />
-
-        <EditText
-            android:id="@+id/editTextTextName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100sp"
             android:ems="10"
             android:inputType="text"
-            android:hint="@string/Name"
-            android:onClick="onClickSaveName"/>
+            android:hint="@string/timeInputExtraMeal" />
 
         <EditText
-            android:id="@+id/editTextNumberCalory"
+            android:id="@+id/editTextCaloriesCounting"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100sp"
             android:ems="10"
-            android:inputType="number"
-            android:hint="@string/callories"
-            android:onClick="onClickSaveCaloriy"/>
-
+            android:hint="@string/countingCallories" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
