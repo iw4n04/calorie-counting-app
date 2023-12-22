@@ -7,50 +7,36 @@
     tools:context=".MainActivity">
 
     <CalendarView
-        android:id="@+id/mainCalendarView"
-        android:layout_width="389dp"
-        android:layout_height="372dp"
+        android:id="@+id/calendarView"
+        android:layout_width="401dp"
+        android:layout_height="381dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.045" />
 
     <Button
         android:id="@+id/extraMealButton"
-        android:layout_width="314dp"
-        android:layout_height="43dp"
-        android:onClick="goToExtraMealInput"
-        android:text="@string/extraMeal"
+        android:layout_width="336dp"
+        android:layout_height="42dp"
+        android:onClick="goToInputExtraMeal"
+        android:text="@string/inputExtraMeal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="216dp"
-        android:layout_height="74dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="319dp"
-        android:layout_height="82dp"
+        android:id="@+id/showSpisokButton"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
         android:onClick="goToSpisokProduktov"
-        android:text="@string/spisokProduktov"
+        android:text="@string/showSpisokProduktov"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.639" />
-
+        app:layout_constraintVertical_bias="0.604" />
 </androidx.constraintlayout.widget.ConstraintLayout>
